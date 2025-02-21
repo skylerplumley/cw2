@@ -8,10 +8,13 @@ class DetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Colors.pink[50],
       appBar: AppBar(title: Text(recipe['name']!)),
       body: Padding(
-        padding: EdgeInsets.all(16.0),
-        child: Text(recipe['ingredients']!, style: TextStyle(fontSize: 18)),
+        padding: EdgeInsets.all(32.0),
+        child: Text(recipe['ingredients']!,
+            style: TextStyle(
+                fontSize: 20, fontWeight: FontWeight.bold, color: Colors.grey)),
       ),
     );
   }
