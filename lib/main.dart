@@ -57,6 +57,7 @@ class HomeScreen extends StatelessWidget {
         itemBuilder: (context, index) {
           return ListTile(
             title: Text(myrecipes[index]['name']!,
+                textAlign: TextAlign.center,
                 style: TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,
